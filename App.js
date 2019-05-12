@@ -1,11 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
+//import
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Header from './src/components/Header'
@@ -22,14 +15,13 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Hello!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Header/>
+        <h3><Header/></h3>
       </View>
     );
   }
 }
-
+//create style css 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
